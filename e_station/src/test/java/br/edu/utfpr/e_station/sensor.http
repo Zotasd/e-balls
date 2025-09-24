@@ -1,0 +1,34 @@
+###mateus
+@id =a0af104c-ba8f-4683-868f-25af7649f646
+###joao
+@id2 =ee2fea3f-1187-46c2-bf48-4558106d4996
+@sesId=5eda2069-49fe-457a-99eb-f9b36622c061
+@URL=http://localhost:8080
+@cpf=098098098
+@cpf2=12312312312
+
+###get
+GET {{URL}}/sensor/getAll
+###getById
+GET {{URL}}/sensor/getById/{{sesId}}
+
+
+###create
+POST {{URL}}/sensor/create
+Content-Type: application/json
+
+{
+    "model":"modelo prova",
+    "sensorType":2
+}
+
+###update
+PUT {{URL}}/sensor/update/{{sesId}}
+Content-Type: application/json
+
+{
+    "model":"modelo tal atualizado",
+    "sensorType":3
+}
+###delete
+POST {{URL}}/sensor/delete/{{sesId}}

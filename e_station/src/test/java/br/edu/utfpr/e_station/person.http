@@ -1,0 +1,41 @@
+###mateus
+@id =00364176-1600-469c-9559-c5a9f39822ea
+###joao
+@id2 =f2de61be-7045-42ab-a87b-ff89e19f1d91
+@URL=http://localhost:8080
+@cpf=098098098
+@cpf2=12312312312
+
+###get
+GET {{URL}}/person/getAll
+
+###get by cpf
+GET {{URL}}/person/getById/{{id2}}
+
+###get by id
+GET {{URL}}/person/getByCpf/{{cpf2}}
+
+###post
+POST {{URL}}/person/create
+Content-Type: application/json
+
+{
+  "name": "Joao",
+  "cpf": "12312312312",
+  "email": "joao@gmail",
+  "phone": "123123123"
+}
+
+###Delete
+POST {{URL}}/person/delete/{{id2}}
+
+###PUT
+PUT  {{URL}}/person/update/{{id2}}
+Content-Type: application/json
+
+{
+  "name": "Joao Oitavo",
+  "cpf": "123123123",
+  "email": "Oitavo@gmail.com",
+  "phone": "123123123"
+}

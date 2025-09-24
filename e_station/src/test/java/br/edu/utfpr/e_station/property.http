@@ -1,0 +1,39 @@
+###mateus
+@id =a0af104c-ba8f-4683-868f-25af7649f646
+###joao
+@id2 =ee2fea3f-1187-46c2-bf48-4558106d4996
+@propId=80c15633-4ddb-4e94-a384-33af2d1af12e
+@URL=http://localhost:8080
+@cpf=098098098
+@cpf2=12312312312
+
+###get
+GET {{URL}}/property/getAll
+###getById
+GET {{URL}}/property/getById/{{propId}}
+###getByOwnerId
+GET {{URL}}/property/getByOwnerId/{{id2}}
+
+###create
+POST {{URL}}/property/create
+Content-Type: application/json
+
+{
+    "name" :  "escritorio do mateus",
+    "address": "Rua cacetada",
+    "ownerId": "00364176-1600-469c-9559-c5a9f39822ea",
+    "areaSize": 50
+}
+
+###update
+PUT {{URL}}/property/update/{{propId}}
+Content-Type: application/json
+
+{
+    "name" :  "Casa e comercio",
+    "address": "Casa e comercio udated agora do mateus",
+    "ownerId": "00364176-1600-469c-9559-c5a9f39822ea",
+    "areaSize": 50
+}
+###delete
+POST {{URL}}/property/delete/{{propId}}

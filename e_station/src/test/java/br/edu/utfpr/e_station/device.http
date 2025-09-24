@@ -1,0 +1,22 @@
+
+
+{
+    "sensors": [
+        { "model": "z", "type": "y" },
+        { "model": "z", "type": "y" },
+        { "model": "z", "type": "y" },
+        { "model": "z", "type": "y" }
+    ]
+}
+
+
+### Update de device
+
+{
+    "sensors": [
+        { "id": "adsasd", "model": "z", "type": "y" },
+        { "id": "adsasd", "model": "z", "type": "y" },
+        { "id": "adsasd", "model": "z", "type": "y" },
+        { "model": "z", "type": "y" }
+    ]
+}
